@@ -25,7 +25,23 @@ body {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: black;
+  color: White;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.company-name {
+  float: left;
+  overflow: hidden;
+}
+
+.company-name .name {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: White;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
