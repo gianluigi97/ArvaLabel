@@ -2,9 +2,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+/* TOPBAR */
+
 .navbar {
   overflow: hidden;
-  background-color: #78a3e3;
+  background-color: #ffffff;
+  border: solid black;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .navbar a {
@@ -16,37 +23,44 @@ body {
   text-decoration: none;
 }
 
-.dropdown {
-  float: right;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: White;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
 .company-name {
   float: left;
   overflow: hidden;
 }
 
 .company-name .name {
-  font-size: 20px;  
+  font-size: 16px;  
   border: none;
   outline: none;
-  color: White;
+  color: black;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
+
+/* MENU BAR */
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: solid black;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
 
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: rgb(163, 208, 228);
@@ -54,9 +68,9 @@ body {
 
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -67,7 +81,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: right;
 }
 
 .dropdown-content a:hover {
