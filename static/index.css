@@ -1,8 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  z-index: 1000;
+}
 
 /* TOPBAR */
 
@@ -16,11 +27,15 @@ body {
 
 .navbar a {
   float: right;
-  font-size: 16px;
+  font-size: 13px;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+.navbar a:hover {
+  font-size: 14px
 }
 
 .company-name {
@@ -29,7 +44,7 @@ body {
 }
 
 .company-name .name {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: black;
@@ -44,14 +59,15 @@ body {
 .dropdown {
   float: right;
   overflow: hidden;
-  margin-top: 10px;
+  margin-top: 0;
   margin-right: 10px;
   margin-left: 10px;
-  border: solid black;
+  z-index: 1000;
+  /* border: solid black; */
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: black;
@@ -59,20 +75,33 @@ body {
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  z-index: inherit;
 }
 
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn {
   background-color: rgb(163, 208, 228);
 }
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: relative;
   background-color: #f9f9f9;
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: inherit;
+} */
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  top: 100%;
+  right: 0;
+  /* background-color: #f9f9f9; */
+  background-color: #f9f9f983;
+  min-width: 100px;
+  /* box-shadow: 0px 8px 16px rgba(0,0,0,0.2); */
+  z-index: 1100;
 }
 
 .dropdown-content a {
@@ -86,8 +115,27 @@ body {
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  /* font-weight: 50px; */
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* FRAME */
+
+.frame {
+
+  background-color: #ffffff;
+  padding-top: 70px;
+  margin-right: 10px;
+  margin-left: 10px;
+  /* margin-top: 90px; */
+
+}
+
+section {
+  min-height: 500px;
+  scroll-margin-top: 80px;
+  /* border: solid black; */
 }
