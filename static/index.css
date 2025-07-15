@@ -5,9 +5,6 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #0c0a22;
-  */
-  /* /* background-color: white; */
-
 }
 
 .header {
@@ -24,8 +21,6 @@ body {
 .navbar {
   overflow: hidden;
   background-color: linear-gradient(to bottom, #c2c2c2, #433e7a, #000000);
-  ;
-  /* border: solid black; */
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -59,12 +54,6 @@ body {
   margin: 0;
 }
 
-/* .company-name img {
-  width: inherit;
-  height: inherit;
-  object-fit: contain;
-  opacity: 0.5;
-} */
 
 /* MENU BAR */
 
@@ -75,7 +64,6 @@ body {
   margin-right: 10px;
   margin-left: 10px;
   z-index: 1000;
-  /* border: solid black; */
 }
 
 .dropdown .dropbtn {
@@ -94,15 +82,6 @@ body {
 .dropdown:hover .dropbtn {
   background-color: rgb(96, 0, 117);
 }
-
-/* .dropdown-content {
-  display: none;
-  position: relative;
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: inherit;
-} */
 
 .dropdown-content {
   position: absolute;
@@ -147,11 +126,13 @@ body {
 }
 
 section {
-  min-height: 500px;
+  min-height: 50px;
   scroll-margin-top: 80px;
   position: relative;
   /* border: solid black; */
 }
+
+/* SEZIONE HOME */
 
 #home {
   position: relative;
@@ -196,12 +177,146 @@ section {
   width: 100%;
   height: 100%;
   z-index: 10;
-
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  color: white;
-  /* se vuoi contrasto con immagine */
+  
+  
 }
+
+.home-logo {
+  width: 600px; /* o quello che preferisci */
+  max-width: 80%;
+  height: auto;
+  opacity: 1;
+  z-index: 10;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+
+
+
+/* SEZIONE MENU BUTTONS */
+
+#menu-buttons {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#menu-buttons div {
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  overflow: hidden;
+  background-color: transparent;
+  transition: transform 0.6s ease-in-out, background-color 0.6s ease-in-out;
+}
+
+.button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.button-link h1 {
+  position: absolute;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.button-link .hover-image {
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  object-fit: cover;
+  border-radius: 15%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+#menu-buttons div:hover {
+  background-color: #a69afe;
+  transform: scale(1.05) translateY(-2px);
+}
+
+.button-link:hover h1 {
+  opacity: 0;
+}
+
+.button-link:hover .hover-image {
+  opacity: 1;
+}
+
+
+
+
+/* SEZIONE FOOTER */
+
+#footer {
+  position: relative;
+  height: 75px;
+  overflow: hidden;
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%);
+  display: flex;
+  justify-content: center; 
+}
+
+.footer-text {
+  margin-top: 5px;
+  color: white;
+  font-size: 12px;
+}
+
+/* SEZIONE PRODUCTS */
+
+#products {
+  position: relative;
+  height: 65vh;
+  color: white;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  overflow: visible;
+  
+}
+
+.product {
+  border: 2px solid white;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  background-color: #222;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product:hover,
+.product.active {
+  background-color: #0c0a22;
+  z-index: 10;
+  width: 80vh;
+  height: 80vh;
+  position: relative;
+  border-color: white;
+  margin-top: 40px;
+}
+
+

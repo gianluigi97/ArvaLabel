@@ -11,22 +11,13 @@
 <body>
     {% include 'navbar.html' %}
     <div class="frame">
-        {% include 'home_section.html' %}
+       
 
-        <!-- <section id="news">
-            <h1>Our Products</h1>
-            <p>Details about products go here.</p>
-        </section>
+        {% if page %}
+            {% include page %}
+        {% endif %}
 
-        <section id="info">
-            <h1>Info</h1>
-            <p>Company info, mission, etc.</p>
-        </section>
-
-        <section id="contacts">
-            <h1>Contacts</h1>
-            <p>Contact form or details here.</p> -->
-        </section>
+        
     </div>
 </body>
 

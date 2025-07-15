@@ -1,12 +1,41 @@
 <section id="home">
-    <div class="home-image">
-      <video autoplay muted loop playsinline>
-        <source src="static/videos/test_video.mp4" type="video/mp4">
-        Il tuo browser non supporta il video.
-      </video>
-    </div>
-    <div class="home-text">
-        <h1>Welcome to Arva Label</h1>
-        <p>Passion for print</p>
-    </div>
+  <div class="home-image">
+    <video autoplay muted loop playsinline>
+      <source src="{{ url_for('static', filename='videos/test_video.mp4') }}" type="video/mp4">
+      Il tuo browser non supporta il video.
+    </video>
+  </div>
+  <!-- <div class="home-text">
+    <h1>Welcome to Arva Label</h1>
+    <p>Passion for print</p>
+  </div> -->
+  <div class="home-text">
+    <img src="{{ url_for('static', filename='images/Arva-Label.svg') }}" alt="Arva Label Logo" class="home-logo" />
+  </div>
+</section>
+<section id="menu-buttons">
+  <div class="button1">
+    <a href="{{ url_for('products') }}" class="button-link">
+      <h1>Prodotti</h1>
+      <img src="{{ url_for('static', filename='images/products.svg') }}" alt="Product" class="hover-image"/>
+    </a>
+  </div>
+  <div class="button2">
+    <a href="#technologies" class="button-link">
+      <h1>Tecnologie</h1>
+      <img src="{{ url_for('static', filename='images/gear.svg') }}" alt="Technologies" class="hover-image"/>
+    </a>
+  </div>
+  <div class="button3">
+    <a href="#people" class="button-link">
+      <h1>Persone</h1>
+      <img src="{{ url_for('static', filename='images/people.svg') }}" alt="People" class="hover-image"/>
+    </a>
+  </div>
+</section>
+<section id="footer">
+  <div class="footer-text">
+    <p>© <strong>2023 Arva Label.</strong>, Via Provinciale, 1 - 24040 Filago (BG)</p>
+    <p>Partita IVA: 04183330168, PEC: arvalabel@pec.it</p>
+  </div>
 </section>
