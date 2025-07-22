@@ -13,6 +13,30 @@
     <img src="{{ url_for('static', filename='images/Arva-Label.svg') }}" alt="Arva Label Logo" class="home-logo" />
   </div>
 </section>
+<section id="description">
+  <div class="description-text"">
+    <p class="p1 show">ArvaLabel nasce nel 2016 a Crema (CR), fondata da Rino Mosti dopo oltre trent’anni di esperienza nel mondo della cartotecnica. È un’azienda a conduzione familiare, in cui diverse generazioni lavorano fianco a fianco, e rappresenta una realtà che affonda le radici nella famiglia e nella passione, cresciuta nel tempo grazie all’impegno di un team di grande esperienza.</p>
+    <p class="p2">
+    In pochi anni siamo diventati un punto di riferimento per aziende di settori diversi – dalla cosmetica al food, dal lusso alle lavorazioni plastiche, dall’alimentare al logistico – offrendo soluzioni su misura, sempre orientate alla qualità e alla velocità di esecuzione.
+La nostra forza è la flessibilità: ascoltiamo, analizziamo e troviamo insieme al cliente la soluzione più adatta.
+Non ci limitiamo a fornire un prodotto: offriamo consulenza, supporto tecnico e tutta la nostra esperienza per valorizzare ogni progetto.</p>
+    <p class="p3">
+    I nostri obiettivi futuri sono orientati verso l’adozione di tecnologie di stampa sempre più innovative, senza rinunciare ai punti di forza delle metodologie tradizionali. L’attenzione è rivolta alla riduzione delle emissioni grazie all’introduzione di nuovi macchinari all’avanguardia, con l’intento di allinearsi ai principi dell’industria 5.0. L’azienda mira a proporsi come partner affidabile per la gestione in outsourcing dell’intero processo di stampa e sovrastampa delle etichette fuori linea.</p>
+    </div>
+    <div class="button-controls">
+      <button class="button-next" onclick="changeParagraph(1)">
+        <img src="{{ url_for('static', filename='images/downward_arrow.svg') }}" alt="Avanti" class="scrollImage"/>
+      </button>
+      <button class="button-prev" onclick="changeParagraph(-1)">
+        <img src="{{ url_for('static', filename='images/upward_arrow.svg') }}" alt="Indietro" class="scrollImage"/>
+      </button>
+      
+    </div>
+
+</section>
+
+
+
 <section id="menu-buttons">
   <div class="button1">
     <a href="{{ url_for('products') }}" class="button-link">
@@ -39,3 +63,30 @@
     <p>Partita IVA: 04183330168, PEC: arvalabel@pec.it</p>
   </div>
 </section>
+
+
+
+<script>
+  let currentStep = 1;
+  const totalSteps = 3;
+
+  function changeParagraph(direction) {
+    const paragraphs = document.querySelectorAll('#description p');
+
+    // Nascondi tutti
+    paragraphs.forEach(p => p.classList.remove('show'));
+
+    // Aggiorna step
+    currentStep += direction;
+
+    // Limiti (puoi cambiare per looping)
+    if (currentStep < 1) currentStep = 1;
+    if (currentStep > totalSteps) currentStep = totalSteps;
+
+    // Mostra il paragrafo corrispondente
+    const currentParagraph = document.querySelector(`#description .p${currentStep}`);
+    if (currentParagraph) {
+      currentParagraph.classList.add('show');
+    }
+  }
+</script>
