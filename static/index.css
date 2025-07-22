@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #dee4ed;
+  background-color: #0c0a22;
 }
 
 .header {
@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgb(38, 89, 171,0.8) 30%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%);
   z-index: 1000;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: linear-gradient(to bottom, #1860b9, #80a9db, #dee4ed);
+  background-color: linear-gradient(to bottom, #c2c2c2, #433e7a, #000000);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -80,7 +80,7 @@ body {
 
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(22, 41, 187);
+  background-color: rgb(96, 0, 117);
 }
 
 .dropdown-content {
@@ -105,7 +105,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #bdd7ef;
+  background-color: #ddd;
   /* font-weight: 50px; */
 }
 
@@ -163,7 +163,7 @@ section {
 .home-image video {
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
   object-fit: cover;
   object-position: center;
   pointer-events: none;
@@ -182,12 +182,12 @@ section {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  
-  
+
+
 }
 
 .home-logo {
-  width: 600px;
+  width: 600px; /* o quello che preferisci */
   max-width: 80%;
   height: auto;
   opacity: 1;
@@ -211,7 +211,7 @@ section {
 
 #description .description-text {
   position: relative; /* necessario per gli elementi assoluti dentro */
-  color: black;
+  color: white;
   width: 100%;
   height: 50%;
   max-width: 1100px;
@@ -221,7 +221,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid blue;
+  border-top: 1px solid white;
 }
 
 #description .p1,
@@ -257,7 +257,7 @@ section {
 
 #description button {
   background: transparent;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
@@ -297,7 +297,7 @@ section {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  
+
 }
 
 #menu-buttons div {
@@ -314,7 +314,7 @@ section {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: black;
+  color: white;
   width: 100%;
   height: 100%;
   position: relative;
@@ -336,7 +336,7 @@ section {
 }
 
 #menu-buttons div:hover {
-  background-color: #98befb;
+  background-color: #a69afe;
   transform: scale(1.05) translateY(-2px);
 }
 
@@ -357,14 +357,14 @@ section {
   position: relative;
   height: 75px;
   overflow: hidden;
-  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgb(38, 89, 171,0.8) 30%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%);
   display: flex;
   justify-content: center; 
 }
 
 .footer-text {
   margin-top: 5px;
-  color: black;
+  color: white;
   font-size: 12px;
   text-align: center;
 }
@@ -374,13 +374,13 @@ section {
 #products {
   position: relative;
   height: 65vh;
-  color: black;
+  color: white;
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly; 
   align-items: center;
   overflow: visible;
-  
+
 }
 
 .product {
