@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #0c0a22;
+  background-color: #dee4ed;
 }
 
 .header {
@@ -12,7 +12,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgb(38, 89, 171,0.8) 30%, rgba(0,0,0,0) 100%);
   z-index: 1000;
 }
 
@@ -20,7 +20,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: linear-gradient(to bottom, #c2c2c2, #433e7a, #000000);
+  background-color: linear-gradient(to bottom, #1860b9, #80a9db, #dee4ed);
   margin-right: 10px;
   margin-left: 10px;
 }
@@ -80,7 +80,7 @@ body {
 
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(96, 0, 117);
+  background-color: rgb(22, 41, 187);
 }
 
 .dropdown-content {
@@ -105,7 +105,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #bdd7ef;
   /* font-weight: 50px; */
 }
 
@@ -163,7 +163,7 @@ section {
 .home-image video {
   width: 100%;
   height: 100%;
-  opacity: 0.9;
+  opacity: 0.8;
   object-fit: cover;
   object-position: center;
   pointer-events: none;
@@ -187,7 +187,7 @@ section {
 }
 
 .home-logo {
-  width: 600px; /* o quello che preferisci */
+  width: 600px;
   max-width: 80%;
   height: auto;
   opacity: 1;
@@ -211,7 +211,7 @@ section {
 
 #description .description-text {
   position: relative; /* necessario per gli elementi assoluti dentro */
-  color: white;
+  color: black;
   width: 100%;
   height: 50%;
   max-width: 1100px;
@@ -221,7 +221,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid white;
+  border-top: 1px solid blue;
 }
 
 #description .p1,
@@ -257,7 +257,7 @@ section {
 
 #description button {
   background: transparent;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
@@ -314,7 +314,7 @@ section {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  color: white;
+  color: black;
   width: 100%;
   height: 100%;
   position: relative;
@@ -336,7 +336,7 @@ section {
 }
 
 #menu-buttons div:hover {
-  background-color: #a69afe;
+  background-color: #98befb;
   transform: scale(1.05) translateY(-2px);
 }
 
@@ -357,14 +357,14 @@ section {
   position: relative;
   height: 75px;
   overflow: hidden;
-  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 30%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgb(38, 89, 171,0.8) 30%, rgba(0,0,0,0) 100%);
   display: flex;
   justify-content: center; 
 }
 
 .footer-text {
   margin-top: 5px;
-  color: white;
+  color: black;
   font-size: 12px;
   text-align: center;
 }
@@ -374,7 +374,7 @@ section {
 #products {
   position: relative;
   height: 65vh;
-  color: white;
+  color: black;
   margin-top: 40px;
   display: flex;
   justify-content: space-evenly; 
