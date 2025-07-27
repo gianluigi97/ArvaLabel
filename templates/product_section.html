@@ -1,8 +1,37 @@
 <section id="products">
-  <div class="product" onclick="this.classList.toggle('active')">Prodotto 1</div>
-  <div class="product" onclick="this.classList.toggle('active')">Prodotto 2</div>
-  <div class="product" onclick="this.classList.toggle('active')">Prodotto 3</div>
-  <div class="product" onclick="this.classList.toggle('active')">Prodotto 4</div>
+  <div class="product">Prodotto 1</div>
+  <div class="product">Prodotto 2</div>
+  <div class="product">Prodotto 3</div>
+  <div class="product">Prodotto 4</div>
 </section>
 
 
+<script>
+  const products = document.querySelectorAll('.product');
+
+  products.forEach(product => {
+    product.addEventListener('click', () => {
+      if (product.classList.contains('active')) {
+        product.classList.remove('active');
+        products.forEach(p => {
+          p.style.display = 'block';
+          p.style.alignItems = 'center';
+          p.style.justifyContent = 'center';
+        });
+      }
+      else {
+        products.forEach(p => {
+          p.classList.remove('active');
+          p.style.display = 'none';
+        });
+
+        product.classList.add('active');
+        product.style.display = 'block';
+        product.style.alignItems = 'center';
+        product.style.justifyContent = 'center';
+      };
+    });
+  });
+
+
+</script>
